@@ -2,8 +2,8 @@
 
 <script lang="ts">
 import { Component,  Vue } from 'vue-property-decorator';
-import './styles.scss';
 import Header from '../../components/header/Header.vue';
+import './styles.scss';
 
 @Component({
   components: {
