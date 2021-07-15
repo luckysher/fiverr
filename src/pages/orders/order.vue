@@ -1,14 +1,11 @@
-<template src="./HelloWorld.html"></template>
+<template src="./order.html"></template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import './styles.scss';
 
 @Component
-export default class HelloWorld extends Vue {
-  @Prop()
-  private msg!: string;
-
-
+export default class Order extends Vue {
+  @Prop() private msg!: string;
 }
 </script>
