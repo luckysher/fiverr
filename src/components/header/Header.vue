@@ -7,18 +7,15 @@
     @Component
     export default class Header extends Vue {
 
-      @Prop() private navBrand = '';
-      @Prop() private menus : string[] = [];
+      @Prop() private navBrand!: string;
+      @Prop() private menus!: string[];
 
-       // Constructor
-       constructor() {
-            super();
+       get navHeading(): string {
+            return this.navBrand;
+       }
 
-            // Nav brand
-            this.navBrand = "fiverr";
-
-            // Header navigation menus
-            this.menus = ["Dashboard", "Messages", "Orders", "Gigs", "Analytics", "Earnings"];
+       get navMenus(): string[] {
+            return this.menus;
        }
     }
 </script>
