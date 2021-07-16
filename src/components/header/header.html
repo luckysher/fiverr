@@ -3,7 +3,9 @@
         <ul>
             <li class="nav-brand"><a href="#">{{ navBrand }}</a></li>
             <li class="nav-menu" v-for="menu in menus" :key="menu">
-                <a href="#">{{ menu }}</a>
+                <div v-bind:class="{'menu': true, 'active': menu == 'Orders'}">
+                    <a href="#">{{ menu }}</a>
+                </div>
             </li>
         </ul>
     </div>

@@ -108,6 +108,19 @@
    color: #44deb3;
 }
 
+.menu{
+   padding: 20px 5px;
+   border-bottom: 4px solid transparent;
+}
+
+.menu:hover {
+    border-bottom: 4px solid #44deb3;
+}
+
+.active{
+   border-bottom: 4px solid #44deb3;
+}
+
 .header-left{
 }
 
@@ -165,4 +178,7 @@
 }
 .left-content{
     text-align: left;
+}
+ul {
+    margin: 0px;
 }
