@@ -1,4 +1,7 @@
 # fiverr
+A Vue Js and Typescript Based sample project.
+
+![basic-features](https://github.com/luckysher/fiverr/blob/master/fiverr.png)
 
 ## Project setup
 ```
