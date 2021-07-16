@@ -4,7 +4,7 @@
     text-align: right;
     font-size: 20px;
     line-height: 0px;
-    padding-bottom: 20px;
+    padding: 15px 15px 5px 15px;
 }
 
 #options{
@@ -16,7 +16,7 @@
     border-radius: 10px;
 }
 .status{
-    background: #f9751857;
+    background: #ffd2b2a1;
     border: 1px solid #f9751857;
     border-radius: 10px;
     padding: 3px 1px;
@@ -25,10 +25,11 @@
     text-transform: uppercase;
     width: 85px;
     margin-left: auto;
+    text-align: center;
 }
 .view-button{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 800;
     color: #5a5656;
 }
@@ -41,21 +42,24 @@
     font-size: 14px;
 }
 .comment-icon{
-
 }
 
 .comment-user-icon{
 
 }
 .icon-image{
-   width: 35px;
+   width: 20px;
    border-radius: 25px;
    cursor: pointer;
 }
 
 .timer-icon{
-   width: 18px;
+    width: 17px;
+    margin-right: 5px;
 }
 .card-info{
-
+    text-align: right;
+}
+.pad-15{
+    padding: 15px;
 }

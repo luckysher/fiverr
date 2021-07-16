@@ -7,15 +7,7 @@
     @Component
     export default class Header extends Vue {
 
-      @Prop() private order = {
-        id: '1',
-        title: 'jug',
-        image_name: 'jug.jpg',
-        days: '5 days left',
-        hours: '5 hrs',
-        cost: '$32',
-        status: 'New Order'
-      };
+      @Prop() private order: any;
 
       private orderKey(): string {
         return "order_"+this.order.id;

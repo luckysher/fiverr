@@ -1,23 +1,50 @@
 <div class="flex-container">
     <div class="flex-row">
-        <div class="col">
+        <div class="col" v-bind:style="{margin: '0px'}">
             <Header />
         </div>
     </div>
-    <div class="flex-row orders">
+    <div class="flex-row orders container">
         <div class="col">
             <div class="flex-row flex-direction-row card-container">
                 <div class="col-12">
-                    <p class="order-list-heading">New Orders</p>
+                    <p class="order-list-heading"><strong>New Orders</strong></p>
                 </div>
-                <div class="col-12">
-                    <Card />
+                <div class="col-12" v-for="order in ordersNew">
+                    <Card v-bind:order="order" />
                 </div>
             </div>
         </div>
 
-        <div class="col">Card 2</div>
-        <div class="col">Card 3</div>
-        <div class="col">Card 4</div>
+        <div class="col">
+            <div class="flex-row flex-direction-row card-container">
+                <div class="col-12">
+                    <p class="order-list-heading"><strong>In Progress</strong></p>
+                </div>
+                <div class="col-12" v-for="order in ordersInProgress">
+                    <Card v-bind:order="order" />
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="flex-row flex-direction-row card-container">
+                <div class="col-12">
+                    <p class="order-list-heading"><strong>Waiting for buyer</strong></p>
+                </div>
+                <div class="col-12" v-for="order in ordersWaiting">
+                    <Card v-bind:order="order" />
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="flex-row flex-direction-row card-container">
+                <div class="col-12">
+                    <p class="order-list-heading"><strong>Completed</strong></p>
+                </div>
+                <div class="col-12" v-for="order in ordersCompleted">
+                    <Card v-bind:order="order" />
+                </div>
+            </div>
+        </div>
     </div>
 </div>
