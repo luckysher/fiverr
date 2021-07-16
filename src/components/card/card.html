@@ -1,0 +1,48 @@
+<div class="card-container" v-bind:id="orderKey()">
+    <div class="card">
+        <div class="col-12">
+            <div class="options"><span>...</span></div>
+        </div>
+        <ul id="options">
+            <li>Delete</li>
+        </ul>
+        <div class="col-12">
+            <div class="flex-row">
+                <div class="col-6">
+                    <img class="product-image" v-bind:src="loadImage(order.image_name)" v-bind:alt="order.title"/>
+                </div>
+                <div class="col-6">
+                    <div class="flex-row flex-direction-row">
+                        <div class="col-12">
+                            <div class="card-info">
+                                <p class="status margin-top-bottom-1"><strong>{{order.status}}</strong></p>
+                                <p class="margin-top-bottom-4 inline-icon right-aligned"><img class="timer-icon" v-bind:src="loadTimerIcon()" alt="timer"/>
+                                    <span class="font-14">{{ order.days }}</span></p>
+                                <p class="margin-top-bottom-4"><span class="font-14">{{ order.hours }}</span> &nbsp;<span> | </span>&nbsp; <span class="font-14"><strong>{{ order.cost }}</strong></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="flex-row">
+                <div class="col-6">
+                    <a href="#" class="view-button">View Order</a>
+                </div>
+                <div class="col-6">
+                    <div class="comments">
+                        <div class="comment">
+                            <div class="comment-icon">
+                                <img class="icon-image" v-bind:src="loadCommentIcon()" v-bind:alt="order.title"/>
+                            </div>
+                            <div class="comment-user-icon">
+                                <img class="icon-image" v-bind:src="loadImage(order.image_name)" v-bind:alt="order.title"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
